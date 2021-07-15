@@ -40,4 +40,4 @@ io.on("connection", (socket) => {
 
 })
 
-httpServer.listen(3333,  () => console.log("server started at http://localhost:3333"))
+httpServer.listen(process.env.PORT || 3333)
